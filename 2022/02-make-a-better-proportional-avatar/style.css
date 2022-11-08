@@ -1,0 +1,15 @@
+.avatar-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.avatar {
+  /* width is optional if your avatar/img is not have same width with the parent element */
+  /* you can use height or width and don't use both or your avatar/img will be squished */
+  /* except you can make sure your avatar/img always have the right proportion */
+  width: inherit;
+  object-fit: cover;
+  object-position: center;
+}
