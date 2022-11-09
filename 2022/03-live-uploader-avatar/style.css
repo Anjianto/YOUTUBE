@@ -1,0 +1,37 @@
+body {
+  background-color: darkgray;
+  padding: 100px;
+}
+
+.avatar-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.avatar {
+  width: inherit;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 100ms ease-in-out;
+}
+
+.camera {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 25px;
+  transition: transform 100ms ease-in-out;
+}
+
+.avatar-wrapper:hover .avatar {
+  opacity: 0.6;
+}
+
+.avatar-wrapper:hover .camera {
+  transform: translate(-50%, -50%) scale(1);
+}
