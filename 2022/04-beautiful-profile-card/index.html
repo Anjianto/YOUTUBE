@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Beautiful Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="avatar-wrapper" id="avatar-wrapper">
+        <img src="assets/avatar.jpg" alt="Avatar" class="avatar" id="avatar" />
+        <!--    Replace with svg to make more performance and prevent svg not loaded on slow network    -->
+        <img src="assets/camera.svg" alt="Camera" class="camera" />
+        <input
+          type="file"
+          name="avatar"
+          id="input-avatar"
+          hidden
+          aria-hidden="true"
+          accept="image/*"
+        />
+      </div>
+      <div class="user-description">
+        <a href="#" class="name link">Anjianto</a>
+        <p class="job">Front-End & Mobile App Engineer</p>
+      </div>
+      <div class="user-account-detail">
+        <div>
+          <a href="#" class="link">100</a>
+          <span>Posts</span>
+        </div>
+        <div>
+          <a href="#" class="link">55</a>
+          <span>Following</span>
+        </div>
+        <div>
+          <a href="#" class="link">1.3K</a>
+          <span>Followers</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/upload-avatar.js"></script>
+  </body>
+</html>
